@@ -9,5 +9,8 @@
             "name": "Ryan Weaver",
             "email": "ryan@knpuniversity.com"
         }
-    ]
+    ],
+    "require": {
+        "ext-json": "*"
+    }
 }

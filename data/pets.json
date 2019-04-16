@@ -29,5 +29,29 @@
         "bio": "Treats and Snoozin!",
         "image": "pancake.png",
         "breed": "Bulldog"
+    },
+    {
+        "name": "HH",
+        "breed": "HHH",
+        "weight": "12",
+        "bio": "NIONOI",
+        "age": "",
+        "image": ""
+    },
+    {
+        "name": "Alfred",
+        "breed": "Food",
+        "weight": "100",
+        "bio": "The best",
+        "age": "",
+        "image": ""
+    },
+    {
+        "name": "Thor",
+        "breed": "Marteau",
+        "weight": "180",
+        "bio": "Asgardien",
+        "age": "",
+        "image": ""
     }
 ]

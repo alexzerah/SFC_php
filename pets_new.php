@@ -1,4 +1,29 @@
 <?php require 'layout/header.php';?>
+<?php
+require 'lib/functions.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    isset($_POST['name']) ? $name = $_POST['name'] : $name = '';
+    isset($_POST['breed']) ? $breed = $_POST['breed'] : $breed = '';
+    isset($_POST['weight']) ? $weight = $_POST['weight'] : $weight = '';
+    isset($_POST['bio']) ? $bio = $_POST['bio'] : $bio = '';
+
+    $pets = get_pets();
+    $newPet = [
+        'name' => $name,
+        'breed' => $breed,
+        'weight' => $weight,
+        'bio' => $bio,
+        'age' => '',
+        'image' => '',
+    ];
+    $pets[] = $newPet;
+    save_pets($pets);
+    header('Location:/');
+    die;
+}
+?>
+
 <div class="container">
     <div class="row">
         <div class="col-xs-6">
@@ -29,5 +54,6 @@
         </div>
     </div>
 </div>
+
 
 <?php require 'layout/footer.php'; ?>
