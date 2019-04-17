@@ -1,12 +1,11 @@
 <?php
-    require 'lib/functions.php';
+require 'lib/functions.php';
+$pets = get_pets();
 
-    $pets = get_pets();
+$pets = array_reverse($pets);
 
-    $pets = array_reverse($pets);
-
-    $cleverWelcomeMessage = 'All the love, none of the crap!';
-    $pupCount = count($pets);
+$cleverWelcomeMessage = 'All the love, none of the crap!';
+$pupCount = count($pets);
 ?>
 
 <?php require 'layout/header.php'; ?>
